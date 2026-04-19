@@ -1,5 +1,5 @@
 package com.whencyclopedia.repository;
 
-public class ContactEffectRepository {
+public class ImbuementRepository {
     
 }

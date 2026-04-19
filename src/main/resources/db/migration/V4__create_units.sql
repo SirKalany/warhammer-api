@@ -35,7 +35,7 @@ CREATE TABLE unit (
 
     -- Melee Combat
     melee_attack            INTEGER,
-    melee_contact_effect_id BIGINT REFERENCES contact_effect(id),
+    melee_imbuement_id      BIGINT REFERENCES imbuement(id),
     attack_interval         NUMERIC(5, 2),
     high_threat             BOOLEAN DEFAULT FALSE,
     splash_target_size      VARCHAR(20) CHECK (splash_target_size IN ('small', 'medium', 'large', 'very_large')),

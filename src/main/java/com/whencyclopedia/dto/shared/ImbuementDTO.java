@@ -1,5 +1,5 @@
 package com.whencyclopedia.dto.shared;
 
-public class ContactEffectDTO {
+public class ImbuementDTO {
     
 }

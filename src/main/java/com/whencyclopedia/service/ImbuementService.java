@@ -1,5 +1,5 @@
 package com.whencyclopedia.service;
 
-public class ContactEffectService {
+public class ImbuementService {
     
 }

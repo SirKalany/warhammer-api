@@ -25,5 +25,5 @@ CREATE TABLE ranged_weapon (
     penetration_size_cap    VARCHAR(20) CHECK (penetration_size_cap IN ('small', 'medium', 'large', 'very_large')),
     max_penetration         INTEGER,
 
-    contact_effect_id       BIGINT REFERENCES contact_effect(id)
+    imbuement_id BIGINT REFERENCES imbuement(id)
 );
