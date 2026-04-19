@@ -1,0 +1,5 @@
+CREATE TABLE race (
+    id      BIGSERIAL PRIMARY KEY,
+    name    VARCHAR(100) NOT NULL UNIQUE,
+    slug    VARCHAR(100) NOT NULL UNIQUE
+);
