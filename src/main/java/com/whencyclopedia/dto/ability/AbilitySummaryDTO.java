@@ -1,5 +1,10 @@
 package com.whencyclopedia.dto.ability;
 
-public class AbilitySummaryDTO {
-    
-}
+import com.whencyclopedia.domain.AbilityType;
+
+public record AbilitySummaryDTO(
+        Long id,
+        String name,
+        String slug,
+        AbilityType type
+) {}

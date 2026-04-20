@@ -1,5 +1,11 @@
 package com.whencyclopedia.dto.spell;
 
-public class SpellSummaryDTO {
-    
-}
+import com.whencyclopedia.domain.AbilityType;
+
+public record SpellSummaryDTO(
+        Long id,
+        Long loreId,
+        String name,
+        String slug,
+        AbilityType type
+) {}

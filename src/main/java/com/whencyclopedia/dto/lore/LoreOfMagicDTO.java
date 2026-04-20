@@ -1,5 +1,8 @@
 package com.whencyclopedia.dto.lore;
 
-public class LoreOfMagicDTO {
-    
-}
+public record LoreOfMagicDTO(
+        Long id,
+        String name,
+        String slug,
+        String description
+) {}

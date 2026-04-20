@@ -1,5 +1,7 @@
 package com.whencyclopedia.dto.shared;
 
-public class UnitAttributeDTO {
-    
-}
+public record UnitAttributeDTO(
+        Long id,
+        String name,
+        String description
+) {}

@@ -1,5 +1,12 @@
 package com.whencyclopedia.dto.building;
 
-public class BuildingChainDTO {
-    
-}
+import com.whencyclopedia.domain.BuildingCategory;
+
+public record BuildingChainDTO(
+        Long id,
+        Long raceId,
+        String name,
+        String slug,
+        BuildingCategory category,
+        String description
+) {}

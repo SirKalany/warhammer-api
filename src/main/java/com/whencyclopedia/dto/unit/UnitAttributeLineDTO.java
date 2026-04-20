@@ -1,5 +1,7 @@
 package com.whencyclopedia.dto.unit;
 
-public class UnitAttributeLineDTO {
-    
-}
+public record UnitAttributeLineDTO(
+        Long id,
+        Short position,
+        String content
+) {}

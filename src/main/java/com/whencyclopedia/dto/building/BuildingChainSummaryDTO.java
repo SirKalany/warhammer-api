@@ -2,12 +2,10 @@ package com.whencyclopedia.dto.building;
 
 import com.whencyclopedia.domain.BuildingCategory;
 
-public record BuildingSummaryDTO(
+public record BuildingChainSummaryDTO(
         Long id,
         Long raceId,
-        Long buildingChainId,
         String name,
         String slug,
-        Short tier,
         BuildingCategory category
 ) {}

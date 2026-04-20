@@ -1,5 +1,8 @@
 package com.whencyclopedia.dto.shared;
 
-public class ImbuementDTO {
-    
-}
+public record ImbuementDTO(
+        Long id,
+        String name,
+        String description,
+        String icon
+) {}

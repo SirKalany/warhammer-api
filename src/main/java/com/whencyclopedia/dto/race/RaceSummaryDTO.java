@@ -1,5 +1,7 @@
 package com.whencyclopedia.dto.race;
 
-public class RaceSummaryDTO {
-    
-}
+public record RaceSummaryDTO(
+        Long id,
+        String name,
+        String slug
+) {}
