@@ -18,15 +18,15 @@ public class RangedWeapon {
     private Long id;
 
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "unit_id", nullable = false)
-    private Unit unit;
+    @JoinColumn(name = "unit_variant_id", nullable = false)
+    private UnitVariant unitVariant;
 
     @Column(nullable = false)
     private String weaponSlot;
 
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "imbuement_id")
-    private Imbuement imbuement;
+    @JoinColumn(name = "imbuement_variant_id")
+    private ImbuementVariant imbuementVariant;
 
     private Integer ammunition;
     private Integer range;

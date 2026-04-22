@@ -19,7 +19,6 @@ public class Imbuement {
     @Column(nullable = false, unique = true)
     private String name;
 
-    private String description;
-
-    private String icon;
+    @Column(nullable = false, unique = true)
+    private String slug;
 }

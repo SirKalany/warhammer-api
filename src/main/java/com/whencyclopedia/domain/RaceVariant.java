@@ -4,25 +4,23 @@ import jakarta.persistence.*;
 import lombok.*;
 
 @Entity
-@Table(name = "unit_attribute_line")
+@Table(name = "race_variant")
 @Getter
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-public class UnitAttributeLine {
+public class RaceVariant {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "unit_id", nullable = false)
-    private Unit unit;
+    @JoinColumn(name = "race_id", nullable = false)
+    private Race race;
 
-    @Column(nullable = false)
-    private Short position;
-
-    @Column(nullable = false)
-    private String content;
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "game_version_id", nullable = false)
+    private GameVersion gameVersion;
 }

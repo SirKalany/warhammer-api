@@ -4,26 +4,25 @@ import jakarta.persistence.*;
 import lombok.*;
 
 @Entity
-@Table(name = "building_garrison")
+@Table(name = "unit_attribute_variant")
 @Getter
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-public class BuildingGarrison {
+public class UnitAttributeVariant {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "building_id", nullable = false)
-    private Building building;
+    @JoinColumn(name = "unit_attribute_id", nullable = false)
+    private UnitAttribute unitAttribute;
 
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "unit_id", nullable = false)
-    private Unit unit;
+    @JoinColumn(name = "game_version_id", nullable = false)
+    private GameVersion gameVersion;
 
-    @Column(nullable = false)
-    private Integer quantity;
+    private String description;
 }

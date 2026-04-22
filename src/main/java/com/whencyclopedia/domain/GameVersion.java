@@ -4,13 +4,13 @@ import jakarta.persistence.*;
 import lombok.*;
 
 @Entity
-@Table(name = "ability")
+@Table(name = "game_version")
 @Getter
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-public class Ability {
+public class GameVersion {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -22,7 +22,5 @@ public class Ability {
     @Column(nullable = false, unique = true)
     private String slug;
 
-    @Enumerated(EnumType.STRING)
-    @Column(nullable = false)
-    private AbilityType type;
+    private String icon;
 }

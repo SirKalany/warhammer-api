@@ -23,8 +23,6 @@ public class LoreOfMagic {
     @Column(nullable = false, unique = true)
     private String slug;
 
-    private String description;
-
     @OneToMany(mappedBy = "lore", cascade = CascadeType.ALL, orphanRemoval = true)
     private List<Spell> spells;
 }
