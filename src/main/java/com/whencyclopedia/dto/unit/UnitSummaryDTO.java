@@ -1,7 +1,7 @@
 package com.whencyclopedia.dto.unit;
 
-import com.whencyclopedia.domain.UnitCategoryType;
-import com.whencyclopedia.domain.UnitRole;
+import com.whencyclopedia.domain.enums.UnitCategoryType;
+import com.whencyclopedia.domain.enums.UnitRole;
 
 public record UnitSummaryDTO(
         Long id,

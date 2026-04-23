@@ -1,6 +1,17 @@
 package com.whencyclopedia.service;
 
 import com.whencyclopedia.domain.*;
+import com.whencyclopedia.domain.enums.UnitCategoryType;
+import com.whencyclopedia.domain.enums.UnitRole;
+import com.whencyclopedia.domain.identity.Ability;
+import com.whencyclopedia.domain.identity.Building;
+import com.whencyclopedia.domain.identity.Imbuement;
+import com.whencyclopedia.domain.identity.Item;
+import com.whencyclopedia.domain.identity.Race;
+import com.whencyclopedia.domain.identity.Spell;
+import com.whencyclopedia.domain.identity.Unit;
+import com.whencyclopedia.domain.identity.UnitAttribute;
+import com.whencyclopedia.domain.variant.RangedWeapon;
 import com.whencyclopedia.dto.ability.AbilitySummaryDTO;
 import com.whencyclopedia.dto.item.ItemSummaryDTO;
 import com.whencyclopedia.dto.shared.ImbuementDTO;
@@ -8,6 +19,15 @@ import com.whencyclopedia.dto.shared.UnitAttributeDTO;
 import com.whencyclopedia.dto.spell.SpellSummaryDTO;
 import com.whencyclopedia.dto.unit.*;
 import com.whencyclopedia.repository.*;
+import com.whencyclopedia.repository.identity.AbilityRepository;
+import com.whencyclopedia.repository.identity.BuildingRepository;
+import com.whencyclopedia.repository.identity.ImbuementRepository;
+import com.whencyclopedia.repository.identity.ItemRepository;
+import com.whencyclopedia.repository.identity.RaceRepository;
+import com.whencyclopedia.repository.identity.SpellRepository;
+import com.whencyclopedia.repository.identity.UnitAttributeRepository;
+import com.whencyclopedia.repository.identity.UnitRepository;
+
 import jakarta.persistence.EntityNotFoundException;
 import lombok.RequiredArgsConstructor;
 import org.springframework.lang.NonNull;

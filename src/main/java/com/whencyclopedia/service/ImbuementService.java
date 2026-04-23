@@ -1,8 +1,9 @@
 package com.whencyclopedia.service;
 
-import com.whencyclopedia.domain.Imbuement;
+import com.whencyclopedia.domain.identity.Imbuement;
 import com.whencyclopedia.dto.shared.ImbuementDTO;
-import com.whencyclopedia.repository.ImbuementRepository;
+import com.whencyclopedia.repository.identity.ImbuementRepository;
+
 import jakarta.persistence.EntityNotFoundException;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;

@@ -1,6 +1,6 @@
 package com.whencyclopedia.controller;
 
-import com.whencyclopedia.domain.ItemCategory;
+import com.whencyclopedia.domain.enums.ItemCategory;
 import com.whencyclopedia.dto.item.ItemDTO;
 import com.whencyclopedia.dto.item.ItemSummaryDTO;
 import com.whencyclopedia.service.ItemService;

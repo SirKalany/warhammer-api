@@ -1,6 +1,6 @@
 package com.whencyclopedia.dto.ability;
 
-import com.whencyclopedia.domain.AbilityType;
+import com.whencyclopedia.domain.enums.AbilityType;
 
 public record AbilitySummaryDTO(
         Long id,

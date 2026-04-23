@@ -1,7 +1,8 @@
 package com.whencyclopedia.dto.ability;
 
-import com.whencyclopedia.domain.AbilityType;
 import java.math.BigDecimal;
+
+import com.whencyclopedia.domain.enums.AbilityType;
 
 public record AbilityDTO(
         Long id,

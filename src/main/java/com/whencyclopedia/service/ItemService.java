@@ -1,9 +1,19 @@
 package com.whencyclopedia.service;
 
 import com.whencyclopedia.domain.*;
+import com.whencyclopedia.domain.enums.ItemCategory;
+import com.whencyclopedia.domain.identity.Ability;
+import com.whencyclopedia.domain.identity.Item;
+import com.whencyclopedia.domain.identity.Race;
+import com.whencyclopedia.domain.identity.Spell;
 import com.whencyclopedia.dto.item.ItemDTO;
 import com.whencyclopedia.dto.item.ItemSummaryDTO;
 import com.whencyclopedia.repository.*;
+import com.whencyclopedia.repository.identity.AbilityRepository;
+import com.whencyclopedia.repository.identity.ItemRepository;
+import com.whencyclopedia.repository.identity.RaceRepository;
+import com.whencyclopedia.repository.identity.SpellRepository;
+
 import jakarta.persistence.EntityNotFoundException;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;

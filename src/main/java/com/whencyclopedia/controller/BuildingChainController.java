@@ -1,6 +1,6 @@
 package com.whencyclopedia.controller;
 
-import com.whencyclopedia.domain.BuildingCategory;
+import com.whencyclopedia.domain.enums.BuildingCategory;
 import com.whencyclopedia.dto.building.BuildingChainDTO;
 import com.whencyclopedia.dto.building.BuildingChainSummaryDTO;
 import com.whencyclopedia.service.BuildingChainService;

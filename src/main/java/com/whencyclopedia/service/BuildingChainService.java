@@ -1,12 +1,13 @@
 package com.whencyclopedia.service;
 
-import com.whencyclopedia.domain.BuildingCategory;
-import com.whencyclopedia.domain.BuildingChain;
-import com.whencyclopedia.domain.Race;
+import com.whencyclopedia.domain.enums.BuildingCategory;
+import com.whencyclopedia.domain.identity.BuildingChain;
+import com.whencyclopedia.domain.identity.Race;
 import com.whencyclopedia.dto.building.BuildingChainDTO;
 import com.whencyclopedia.dto.building.BuildingChainSummaryDTO;
-import com.whencyclopedia.repository.BuildingChainRepository;
-import com.whencyclopedia.repository.RaceRepository;
+import com.whencyclopedia.repository.identity.BuildingChainRepository;
+import com.whencyclopedia.repository.identity.RaceRepository;
+
 import jakarta.persistence.EntityNotFoundException;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;

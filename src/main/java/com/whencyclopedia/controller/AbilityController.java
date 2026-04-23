@@ -1,6 +1,6 @@
 package com.whencyclopedia.controller;
 
-import com.whencyclopedia.domain.AbilityType;
+import com.whencyclopedia.domain.enums.AbilityType;
 import com.whencyclopedia.dto.ability.AbilityDTO;
 import com.whencyclopedia.dto.ability.AbilitySummaryDTO;
 import com.whencyclopedia.service.AbilityService;

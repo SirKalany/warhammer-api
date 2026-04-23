@@ -1,6 +1,6 @@
 package com.whencyclopedia.dto.spell;
 
-import com.whencyclopedia.domain.AbilityType;
+import com.whencyclopedia.domain.enums.AbilityType;
 
 public record SpellSummaryDTO(
         Long id,

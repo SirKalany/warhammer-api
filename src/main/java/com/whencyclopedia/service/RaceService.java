@@ -1,9 +1,10 @@
 package com.whencyclopedia.service;
 
-import com.whencyclopedia.domain.Race;
+import com.whencyclopedia.domain.identity.Race;
 import com.whencyclopedia.dto.race.RaceDTO;
 import com.whencyclopedia.dto.race.RaceSummaryDTO;
-import com.whencyclopedia.repository.RaceRepository;
+import com.whencyclopedia.repository.identity.RaceRepository;
+
 import jakarta.persistence.EntityNotFoundException;
 import lombok.RequiredArgsConstructor;
 import org.springframework.lang.NonNull;

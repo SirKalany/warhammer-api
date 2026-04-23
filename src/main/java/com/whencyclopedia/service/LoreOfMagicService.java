@@ -1,9 +1,10 @@
 package com.whencyclopedia.service;
 
-import com.whencyclopedia.domain.LoreOfMagic;
+import com.whencyclopedia.domain.identity.LoreOfMagic;
 import com.whencyclopedia.dto.lore.LoreOfMagicDTO;
 import com.whencyclopedia.dto.lore.LoreOfMagicSummaryDTO;
-import com.whencyclopedia.repository.LoreOfMagicRepository;
+import com.whencyclopedia.repository.identity.LoreOfMagicRepository;
+
 import jakarta.persistence.EntityNotFoundException;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;

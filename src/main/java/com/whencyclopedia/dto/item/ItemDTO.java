@@ -1,8 +1,9 @@
 package com.whencyclopedia.dto.item;
 
-import com.whencyclopedia.domain.ItemCategory;
-import com.whencyclopedia.domain.ItemRarity;
 import java.util.List;
+
+import com.whencyclopedia.domain.enums.ItemCategory;
+import com.whencyclopedia.domain.enums.ItemRarity;
 
 public record ItemDTO(
         Long id,

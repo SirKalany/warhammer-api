@@ -1,10 +1,10 @@
 package com.whencyclopedia.dto.unit;
 
-import com.whencyclopedia.domain.RangedMode;
-import com.whencyclopedia.domain.UnitCategoryType;
-import com.whencyclopedia.domain.UnitRole;
 import com.whencyclopedia.dto.shared.ImbuementDTO;
 import com.whencyclopedia.dto.shared.UnitAttributeDTO;
+import com.whencyclopedia.domain.enums.RangedMode;
+import com.whencyclopedia.domain.enums.UnitCategoryType;
+import com.whencyclopedia.domain.enums.UnitRole;
 import com.whencyclopedia.dto.ability.AbilitySummaryDTO;
 import com.whencyclopedia.dto.spell.SpellSummaryDTO;
 import com.whencyclopedia.dto.item.ItemSummaryDTO;

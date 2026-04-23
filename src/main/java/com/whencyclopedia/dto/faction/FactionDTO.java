@@ -1,6 +1,6 @@
 package com.whencyclopedia.dto.faction;
 
-import com.whencyclopedia.domain.ClimateStatus;
+import com.whencyclopedia.domain.enums.ClimateStatus;
 
 public record FactionDTO(
         Long id,

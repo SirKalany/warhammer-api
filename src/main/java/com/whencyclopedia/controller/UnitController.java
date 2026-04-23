@@ -1,7 +1,7 @@
 package com.whencyclopedia.controller;
 
-import com.whencyclopedia.domain.UnitCategoryType;
-import com.whencyclopedia.domain.UnitRole;
+import com.whencyclopedia.domain.enums.UnitCategoryType;
+import com.whencyclopedia.domain.enums.UnitRole;
 import com.whencyclopedia.dto.unit.UnitDTO;
 import com.whencyclopedia.dto.unit.UnitSummaryDTO;
 import com.whencyclopedia.service.UnitService;

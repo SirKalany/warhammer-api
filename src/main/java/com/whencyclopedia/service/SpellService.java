@@ -1,11 +1,12 @@
 package com.whencyclopedia.service;
 
-import com.whencyclopedia.domain.LoreOfMagic;
-import com.whencyclopedia.domain.Spell;
+import com.whencyclopedia.domain.identity.LoreOfMagic;
+import com.whencyclopedia.domain.identity.Spell;
 import com.whencyclopedia.dto.spell.SpellDTO;
 import com.whencyclopedia.dto.spell.SpellSummaryDTO;
-import com.whencyclopedia.repository.LoreOfMagicRepository;
-import com.whencyclopedia.repository.SpellRepository;
+import com.whencyclopedia.repository.identity.LoreOfMagicRepository;
+import com.whencyclopedia.repository.identity.SpellRepository;
+
 import jakarta.persistence.EntityNotFoundException;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;

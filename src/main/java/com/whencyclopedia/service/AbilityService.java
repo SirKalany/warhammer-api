@@ -1,10 +1,11 @@
 package com.whencyclopedia.service;
 
-import com.whencyclopedia.domain.Ability;
-import com.whencyclopedia.domain.AbilityType;
+import com.whencyclopedia.domain.enums.AbilityType;
+import com.whencyclopedia.domain.identity.Ability;
 import com.whencyclopedia.dto.ability.AbilityDTO;
 import com.whencyclopedia.dto.ability.AbilitySummaryDTO;
-import com.whencyclopedia.repository.AbilityRepository;
+import com.whencyclopedia.repository.identity.AbilityRepository;
+
 import jakarta.persistence.EntityNotFoundException;
 import lombok.RequiredArgsConstructor;
 import org.springframework.lang.NonNull;

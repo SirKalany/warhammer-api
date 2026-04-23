@@ -1,7 +1,8 @@
 package com.whencyclopedia.dto.spell;
 
-import com.whencyclopedia.domain.AbilityType;
 import java.math.BigDecimal;
+
+import com.whencyclopedia.domain.enums.AbilityType;
 
 public record SpellDTO(
         Long id,

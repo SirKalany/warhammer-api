@@ -1,11 +1,12 @@
 package com.whencyclopedia.service;
 
-import com.whencyclopedia.domain.Faction;
-import com.whencyclopedia.domain.Race;
+import com.whencyclopedia.domain.identity.Faction;
+import com.whencyclopedia.domain.identity.Race;
 import com.whencyclopedia.dto.faction.FactionDTO;
 import com.whencyclopedia.dto.faction.FactionSummaryDTO;
-import com.whencyclopedia.repository.FactionRepository;
-import com.whencyclopedia.repository.RaceRepository;
+import com.whencyclopedia.repository.identity.FactionRepository;
+import com.whencyclopedia.repository.identity.RaceRepository;
+
 import jakarta.persistence.EntityNotFoundException;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;

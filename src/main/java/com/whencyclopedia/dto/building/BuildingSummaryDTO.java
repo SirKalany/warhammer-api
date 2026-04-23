@@ -1,6 +1,6 @@
 package com.whencyclopedia.dto.building;
 
-import com.whencyclopedia.domain.BuildingCategory;
+import com.whencyclopedia.domain.enums.BuildingCategory;
 
 public record BuildingSummaryDTO(
         Long id,

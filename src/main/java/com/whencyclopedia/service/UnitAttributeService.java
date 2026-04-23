@@ -1,8 +1,9 @@
 package com.whencyclopedia.service;
 
-import com.whencyclopedia.domain.UnitAttribute;
+import com.whencyclopedia.domain.identity.UnitAttribute;
 import com.whencyclopedia.dto.shared.UnitAttributeDTO;
-import com.whencyclopedia.repository.UnitAttributeRepository;
+import com.whencyclopedia.repository.identity.UnitAttributeRepository;
+
 import jakarta.persistence.EntityNotFoundException;
 import lombok.RequiredArgsConstructor;
 import org.springframework.lang.NonNull;
