@@ -4,6 +4,7 @@ CREATE TABLE unit_variant (
     game_version_id     BIGINT NOT NULL REFERENCES game_version(id),
 
     -- Display
+    display_name        VARCHAR(150)
     picture             VARCHAR(255),
     tier                SMALLINT NOT NULL CHECK (tier BETWEEN 1 AND 5),
     category            VARCHAR(100),

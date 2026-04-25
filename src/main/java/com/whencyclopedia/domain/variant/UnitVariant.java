@@ -32,6 +32,7 @@ public class UnitVariant {
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "game_version_id", nullable = false)
     private GameVersion gameVersion;
+    private String displayName;
 
     // Display
     private String picture;

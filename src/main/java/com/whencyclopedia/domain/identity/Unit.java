@@ -2,6 +2,7 @@ package com.whencyclopedia.domain.identity;
 
 import jakarta.persistence.*;
 import lombok.*;
+import java.util.List;
 
 @Entity
 @Table(name = "unit")
@@ -22,7 +23,11 @@ public class Unit {
     @Column(nullable = false, unique = true)
     private String slug;
 
-    @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "race_id", nullable = false)
-    private Race race;
+    @ManyToMany
+    @JoinTable(
+        name = "unit_race",
+        joinColumns = @JoinColumn(name = "unit_id"),
+        inverseJoinColumns = @JoinColumn(name = "race_id")
+    )
+    private List<Race> races;
 }

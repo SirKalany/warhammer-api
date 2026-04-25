@@ -1,0 +1,43 @@
+package com.whencyclopedia.dto.variant.spell;
+
+import com.whencyclopedia.domain.enums.AbilityType;
+import java.math.BigDecimal;
+
+public record SpellVariantDTO(
+        Long id,
+        Long spellId,
+        String name,
+        String slug,
+        AbilityType type,
+        Long loreId,
+        Long gameVersionId,
+        String description,
+        String effect,
+        String target,
+        BigDecimal range,
+        BigDecimal radius,
+        BigDecimal duration,
+        BigDecimal cooldown,
+        Integer affectedUnits,
+        Integer uses,
+        String conditions,
+        Integer baseDamage,
+        Integer explosiveDamage,
+        BigDecimal damagePerSecond,
+        BigDecimal movementSpeed,
+        Integer cost,
+        BigDecimal miscastChance,
+        String overcastEffect,
+        String overcastTarget,
+        BigDecimal overcastRange,
+        BigDecimal overcastRadius,
+        BigDecimal overcastDuration,
+        BigDecimal overcastCooldown,
+        Integer overcastAffectedUnits,
+        Integer overcastBaseDamage,
+        Integer overcastExplosiveDamage,
+        BigDecimal overcastDamagePerSecond,
+        BigDecimal overcastMovementSpeed,
+        Integer overcastCost,
+        BigDecimal overcastMiscastChance
+) {}

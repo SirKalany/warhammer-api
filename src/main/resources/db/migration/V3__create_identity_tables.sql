@@ -78,10 +78,16 @@ CREATE TABLE building (
     category          building_category NOT NULL
 );
 
--- Units
+-- Unit identity (no race_id column)
 CREATE TABLE unit (
     id      BIGSERIAL PRIMARY KEY,
     name    VARCHAR(150) NOT NULL,
-    slug    VARCHAR(150) NOT NULL UNIQUE,
-    race_id BIGINT NOT NULL REFERENCES race(id)
+    slug    VARCHAR(150) NOT NULL UNIQUE
+);
+
+-- Junction table for shared units
+CREATE TABLE unit_race (
+    unit_id BIGINT NOT NULL REFERENCES unit(id) ON DELETE CASCADE,
+    race_id BIGINT NOT NULL REFERENCES race(id) ON DELETE CASCADE,
+    PRIMARY KEY (unit_id, race_id)
 );
