@@ -7,5 +7,5 @@ import java.util.List;
 
 @Repository
 public interface UnitAttributeLineRepository extends JpaRepository<UnitVariantAttributeLine, Long> {
-    List<UnitVariantAttributeLine> findByUnitIdOrderByPositionAsc(Long unitId);
+    List<UnitVariantAttributeLine> findByUnitVariant_IdOrderByPositionAsc(Long unitId);
 }

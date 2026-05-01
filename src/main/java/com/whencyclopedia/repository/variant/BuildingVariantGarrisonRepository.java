@@ -7,5 +7,5 @@ import java.util.List;
 
 @Repository
 public interface BuildingVariantGarrisonRepository extends JpaRepository<BuildingVariantGarrison, Long> {
-    List<BuildingVariantGarrison> findByBuildingId(Long buildingId);
+    List<BuildingVariantGarrison> findByBuildingVariantId(Long buildingVariantId);
 }

@@ -12,5 +12,4 @@ public interface AbilityVariantRepository extends JpaRepository<AbilityVariant, 
     List<AbilityVariant> findByGameVersionId(Long gameVersionId);
     List<AbilityVariant> findByAbility_TypeAndGameVersionId(AbilityType type, Long gameVersionId);
     Optional<AbilityVariant> findByAbilityIdAndGameVersionId(Long abilityId, Long gameVersionId);
-    List<AbilityVariant> findByAbilityIdIn(List<Long> abilityIds);
 }
